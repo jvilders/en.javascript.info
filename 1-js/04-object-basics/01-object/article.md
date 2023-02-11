@@ -392,7 +392,7 @@ Also, we could use another variable name here instead of `key`. For instance, `"
 
 Are objects ordered? In other words, if we loop over an object, do we get all properties in the same order they were added? Can we rely on this?
 
-The short answer is: "ordered in a special fashion": integer properties are sorted, others appear in creation order. The details follow.
+The short answer is: "ordered in a special fashion": First any integer properties appear in sorted order, then any other properties appear in creation order. The details follow.
 
 As an example, let's consider an object with the phone codes:
 
